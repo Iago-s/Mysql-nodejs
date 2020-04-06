@@ -1,0 +1,8 @@
+<h1>Lista de filmes cadastrados no banco: </h1>
+
+{{#each cadastros}}
+  <h1>Titulo: {{dataValues.title}}</h1>
+  <p>Sinopse: {{dataValues.description}}</p>
+  <a href="/delete/{{dataValues.id}}"> <button>Deletar</button> </a>
+  <br> <br>
+{{/each}}
